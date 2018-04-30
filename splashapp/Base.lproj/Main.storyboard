@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="splashapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cin" translatesAutoresizingMaskIntoConstraints="NO" id="DR1-Uh-BJP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shc-5v-KTD">
+                                <rect key="frame" x="164" y="598" width="46" height="30"/>
+                                <state key="normal" title="Open">
+                                    <color key="titleColor" red="0.9746972652" green="0.9931475353" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DR1-Uh-BJP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Fg-Lg-mAh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="shc-5v-KTD" secondAttribute="bottom" constant="39" id="44K-KC-ttM"/>
+                            <constraint firstItem="shc-5v-KTD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="578" id="Tso-fH-65z"/>
+                            <constraint firstItem="DR1-Uh-BJP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fCk-Ie-BkV"/>
+                            <constraint firstItem="DR1-Uh-BJP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fJt-iO-MGb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="shc-5v-KTD" secondAttribute="trailing" constant="165" id="tut-5X-7FK"/>
+                            <constraint firstItem="DR1-Uh-BJP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vK4-aP-0it"/>
+                            <constraint firstItem="shc-5v-KTD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="y0H-Ke-fxE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagen" destination="DR1-Uh-BJP" id="N6l-8I-2VH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cin" width="423" height="592"/>
+    </resources>
+</document>
